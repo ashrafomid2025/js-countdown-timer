@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body class="font-yekan">
+    <div
+      id="timer"
+      class="h-screen flex justify-center items-center w-full bg-linear-60 from-gray-200 from-30% to-gray-300"
+    >
+      <div
+        class="w-[50%] border px-4 py-5 rounded-md bg-gray-300 flex gap-1.5 flex-col"
+      >
+        <input
+          id="title"
+          class="py-3 px-4 bg-white border rounded-md focus:outline-none"
+          type="text"
+          placeholder="
+          عنوان تایمر را وارد نمایید
+          "
+        />
+        <input
+          id="time"
+          class="py-3 px-4 bg-white border rounded-md focus:outline-none"
+          type="datetime-local"
+        />
+        <button
+          id="btn"
+          class="py-3 px-4 w-full bg-sky-600 text-white rounded-md"
+        >
+          شروع تایمر
+        </button>
+      </div>
+    </div>
+
+    <!-- 
+   -->
+    <div
+      id="showTimer"
+      class="h-screen hidden w-full justify-center items-center bg-linear-60 from-gray-200 to-gray-300"
+    >
+      <div class="py-8 px-4 w-fit bg-white border rounded-md">
+        <h1 id="textTitle"></h1>
+        <div class="flex space-x-2">
+          <div class="text-center border p-2 rounded-md">
+            <h1 class="px-5 py-4 bg-orange-400 text-white">روز</h1>
+            <h3 id="days">3</h3>
+          </div>
+          <div class="text-center border p-2 rounded-md">
+            <h1 class="px-5 py-4 bg-orange-400 text-white">ساعت</h1>
+            <h3 id="hours">3</h3>
+          </div>
+          <div class="text-center border p-2 rounded-md">
+            <h1 class="px-5 py-4 bg-orange-400 text-white">دقیقه</h1>
+            <h3 id="minutes">3</h3>
+          </div>
+          <div class="text-center border p-2 rounded-md">
+            <h1 class="px-5 py-4 bg-orange-400 text-white">ثانیه</h1>
+            <h3 id="seconds">3</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

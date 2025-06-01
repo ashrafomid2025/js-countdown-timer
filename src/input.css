@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@import url("../public/fonts/Yekan.ttf");
+@theme {
+  --font-yekan: "B Yekan";
+}
